@@ -4,6 +4,7 @@ import "../App.css";
 import Jobs from "../Component/Jobs";
 import { useSelector, useDispatch } from "react-redux";
 import { searchQuery } from "../Redux/action";
+import data from "../Assets/api.json";
 
 const GithubJobDesk = () => {
   const dispatch = useDispatch();
@@ -11,9 +12,9 @@ const GithubJobDesk = () => {
 
   useEffect(() => {
     (async () => {
-      const data = await fetch(
-        "https://jobs.github.com/positions.json"
-      ).then((res) => res.json());
+      // const data = await fetch(
+      //   "https://jobs.github.com/positions.json"
+      // ).then((res) => res.json());
       dispatch({ type: "GRAB_API", data });
     })();
   }, []);
