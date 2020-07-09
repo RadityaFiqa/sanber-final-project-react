@@ -11,9 +11,9 @@ const GithubJobDesk = () => {
 
   useEffect(() => {
     (async () => {
-      const data = await fetch("http://localhost:3001/api").then((res) =>
-        res.json()
-      );
+      const data = await fetch(
+        "https://jobs.github.com/positions.json"
+      ).then((res) => res.json());
       dispatch({ type: "GRAB_API", data });
     })();
   }, []);
