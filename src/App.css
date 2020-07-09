@@ -1,0 +1,86 @@
+body {
+  margin: 0px;
+}
+
+.head {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  background-color: #666666;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Chilanka";
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+.header a:visited {
+  color: black;
+}
+
+.job {
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px black;
+  align-items: center;
+  padding: 10px;
+  margin: 20px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.title p {
+  margin-top: 2px;
+  font-weight: normal;
+}
+
+.job:hover {
+  cursor: pointer;
+  color: #666666;
+}
+
+.detail-logo {
+  height: 30px;
+  float: right;
+}
+
+.job-company {
+  padding: 0 30px;
+}
+
+.job-dialog {
+  padding: 30px 50px;
+}
+
+.welcome-description {
+  width: 80%;
+  margin: 20px 0;
+  padding: 20px 10px;
+}
+
+.welcome-item {
+  opacity: 0;
+  transition: 0.5s ease all;
+}
+
+.flex-align-mid {
+  display: flex;
+  align-items: center;
+}
+
+.job-title-location {
+  margin-left: 20px;
+}
